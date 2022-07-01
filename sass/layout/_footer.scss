@@ -1,0 +1,66 @@
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--background-dark-color);
+}
+
+.footer__left-side {
+    flex-grow: 1;
+    margin-right: 70px;
+}
+
+.footer__right-side {
+    margin-right: 93px;
+}
+
+.footer__contacts {
+    @include font($fw: 400, $lh: 24px);
+    letter-spacing: 0.03em; 
+    font-style: normal;
+}
+
+.footer__link {
+    transition: color 250ms var(--cubic-bezier);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.footer__link__map {
+    color: var(--auxiliary-light-color);
+}
+
+.footer__link_connection {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer__title,
+.subscribe-form__title {
+    @include font();
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    color: var(--auxiliary-light-color);
+}
+
+.footer__social-link {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer__social-icon {
+    fill: var(--auxiliary-light-color);
+}
+
