@@ -1,3 +1,11 @@
+.section__about{
+    padding-top: 0;
+
+    @media screen and (max-width: 1199px){
+        display: none;
+    }
+}
+
 .about {
     display: flex;
     flex-direction: row;

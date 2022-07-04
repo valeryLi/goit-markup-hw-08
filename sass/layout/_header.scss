@@ -11,7 +11,7 @@
     border-bottom: 1px solid #ECECEC;
   }
 
-// 0-768px
+// 0-767px
 @media screen and (max-width: 767px){
     .menu {
         display: none;
@@ -22,13 +22,16 @@
     }
 
     .mobile-menu__open-btn {
+        display: block;
+        padding: 10px 0;
+        line-height: 0;
         background-color: transparent;
         border: none;
-        padding: 0;
-        line-height: 0;
+        
     }
 }
 
+// 768-1200px
 @media screen and (min-width: 768px){
     .mobile-menu__open-btn{
         display: none;
@@ -127,6 +130,7 @@
     }
 }
 
+// 1200px-~
 @media screen and (min-width: 1200px){
     .header {
         padding-top: 24px;

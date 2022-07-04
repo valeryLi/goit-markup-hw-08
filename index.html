@@ -110,11 +110,11 @@
 <section class="hero">
     <div class="container">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-            <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
+            <button class="modal__btn" type="button" data-modal-open>Заказать услугу</button>
     </div>
 </section>
         <!-- FEATURES -->
-<!-- <section class="section">
+<section class="section">
     <div class="container">
         <h2 class="section__title section__title_visually-hidden">Особенности</h2>
     <ul class="features">
@@ -157,40 +157,54 @@
         </li>
     </ul>
 </div>
-</section>  -->
+</section> 
        <!-- ABOUT-->
-<!-- <section class="section section_no-padding-top">
+<section class="section section__about">
     <div class="container">
     <h2 class="section__title">Чем мы занимаемся</h2>
     <ul class="about">
             <li class="about__item">
                 <div class="about__wrapper">
-                    <img class="about__img" src="./images/about/about-img-1.jpg" alt="Разработчик пишет код" width="370" height="290">
+                    <img class="about__img" srcset="./images/main-page/about/about-1@1x.jpg 1x, /images/main-page/about/about-1@2x.jpg 2x"
+                    src="./images/main-page/about/about-1@1x.jpg" alt="Разработчик пишет код" width="370" height="290">
                     <h2 class="about__title">Десктопные приложения</h2>
                 </div>
             </li>
             <li class="about__item">
                 <div class="about__wrapper">
-                    <img class="about__img" src="./images/about/about-img-2.jpg" alt="Разработчик работает над мобильным приложением" width="370" height="290">
+                    <img class="about__img" srcset="./images/main-page/about/about-2@1x.jpg 1x, ./images/main-page/about/about-2@2x.jpg 2x"
+                    src="./images/main-page/about/about-2@1x.jpg" alt="Разработчик работает над мобильным приложением" width="370" height="290">
                     <h2 class="about__title">Мобильные приложения</h2>
                 </div>
             </li>
             <li class="about__item">
                 <div class="about__wrapper">
-                    <img class="about__img" src="./images/about/about-img-3.jpg" alt="Дизайнер подбирает цвета" width="370" height="290">
+                    <img class="about__img" srcset="./images/main-page/about/about-3@1x.jpg 1x, ./images/main-page/about/about-3@2x.jpg 2x"
+                    src="./images/main-page/about/about-3@1x.jpg" alt="Дизайнер подбирает цвета" width="370" height="290">
                     <h2 class="about__title">Дизайнерские решения</h2>
                 </div>
             </li>
     </ul>
     </div>
-</section> -->
+</section>
        <!-- OUR TEAM -->
-<!-- <section class="section section_other-bg">
+<section class="section section_other-bg">
     <div class="container">
         <h2 class="section__title">Наша команда</h2>
         <ul class="employees">
             <li class="employees__card">
-                <img class="employees__photo" src="./images/our-team/igor-demyanenko-img-1.jpg"       alt="мужчина улыбается" width="270" height="260">
+                <picture>
+                    <source
+                     srcset="./images/main-page/team/igor_demjanenko_desk@1x.jpg 1x, ./images/main-page/team/igor_demjanenko_desk@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source
+                        srcset="./images/main-page/team/igor_demjanenko_tab@1x.jpg 1x, ./images/main-page/team/igor_demjanenko_tab@2x.jpg 2x"
+                        media="(min-width: 768px)">
+                    <source
+                        srcset="./images/main-page/team/igor_demjanenko_mob@1x.jpg 1x, ./images/main-page/team/igor_demjanenko_mob@2x.jpg 2x"
+                        media="(max-width: 767px)">
+                <img class="employees__photo"
+                 src="./images/main-page/team/igor_demjanenko_desk@1x.jpg"       alt="мужчина улыбается" width="270" height="260">
+                </picture> 
     <div class="employees__wrapper">
         <h3 class="employees__title ">Игорь Демьяненко</h3>
             <p class="employees__text" lang="en">Product Designer</p>
@@ -227,7 +241,18 @@
         </div>
             </li>
             <li class="employees__card">
-                <img class="employees__photo" src="./images/our-team/olga-repina-img-2.jpg" alt="женщина улыбается" width="270" height="260">
+                <picture>
+                    <source
+                        srcset="./images/main-page/team/olga_repina_desk@1x.jpg 1x, ./images/main-page/team/olga_repina_desk@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                    <source
+                        srcset="./images/main-page/team/olga_repina_tab@1x.jpg 1x, ./images/main-page/team/olga_repina_tab@2x.jpg 2x"
+                        media="(min-width: 768px)">
+                    <source
+                        srcset="./images/main-page/team/olga_repina_mob@1x.jpg 1x, ./images/main-page/team/olga_repina_mob@2x.jpg 2x"
+                        media="(max-width: 767px)">
+                    <img class="employees__photo" src="./images/main-page/team/olga_repina_desk@1x.jpg" alt="женщина улыбается" width="270" height="260">
+                </picture>
             <div class="employees__wrapper">
                 <h3 class="employees__title">Ольга Репина</h3>
                 <p class="employees__text" lang="en">Frontend Developer</p>
@@ -264,7 +289,18 @@
         </div>
             </li>
             <li class="employees__card">
-                <img class="employees__photo" src="./images/our-team/nikolaj-tarasov-img-3.jpg" alt="мужчина улыбается" width="270" height="260">
+                <picture>
+                    <source
+                        srcset="./images/main-page/team/nikolai_tarasov_desk@1x.jpg 1x, ./images/main-page/team/nikolai_tarasov_desk@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                    <source
+                        srcset="./images/main-page/team/nikolai_tarasov_tab@1x.jpg 1x, ./images/main-page/team/nikolai_tarasov_tab@2x.jpg 2x"
+                        media="(min-width: 768px)">
+                    <source
+                        srcset="./images/main-page/team/nikolai_tarasov_mob@1x.jpg 1x, ./images/main-page/team/nikolai_tarasov_mob@2x.jpg 2x"
+                        media="(max-width: 767px)">
+                <img class="employees__photo" src="./images/main-page/team/nikolai_tarasov_desk@1x.jpg" alt="мужчина улыбается" width="270" height="260">
+                </picture>
         <div class="employees__wrapper">
                 <h3 class="employees__title">Николай Тарасов</h3>
                 <p class="employees__text" lang="en">Marketing</p>
@@ -301,7 +337,17 @@
         </div>
             </li>
             <li class="employees__card">
-                <img class="employees__photo" src="./images/our-team/mihail-ermakov-img-4.jpg" alt="мужчина улыбается" width="270" height="260">
+                <picture>
+                    <source
+                        srcset="./images/main-page/team/mihail_jermakov_desk@1x.jpg 1x, ./images/main-page/team/mihail_jermakov_desk@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                    <source
+                        srcset="./images/main-page/team/mihail_jermakov_tab@1x.jpg 1x, ./images/main-page/team/mihail_jermakov_tab@2x.jpg 2x"
+                        media="(min-width: 768px)">
+                    <source
+                        srcset="./images/main-page/team/mihail_jermakov_mob@1x.jpg 1x, ./images/main-page/team/mihail_jermakov_mob@2x.jpg 2x"
+                        media="(max-width: 767px)">
+                <img class="employees__photo" src="./images/main-page/team/mihail_jermakov_desk@1x.jpg" alt="мужчина улыбается" width="270" height="260">
         <div class="employees__wrapper">
                 <h3 class="employees__title">Михаил Ермаков</h3>
                 <p class="employees__text" lang="en">UI Designer</p>
@@ -339,7 +385,7 @@
     </li>
     </ul>
     </div>
-</section> -->
+</section>
 <!-- PERMANENT CLIENTS -->
 <!-- <section class="section">
         <div class="container">
@@ -464,7 +510,7 @@
         </div>
 </div>
 </footer> -->
-<!-- <div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
             <svg class="modal-close-btn__icon" width="18px" height="18px">
@@ -514,7 +560,7 @@
                 </span>
             </label>
             <label class="contact-form__field__comment">
-                <span class="contact-form-field-key">Комментарий</span>
+                <span class="contact-form__field__key">Комментарий</span>
                 <textarea class="contact-form__comment"
                 placeholder="Введите текст"
                 name="user_comment"
@@ -527,10 +573,10 @@
             <label for="checkbox-policy" class="contact-form__checkbox__label checkbox__text">
                 Соглашаюсь с рассылкой и принимаю&nbsp;<a href="" class="contact-form__link">Условия договора</a>
             </label>
-            <button type="submit" class="modal-btn contact-form__button">Отправить</button>
+            <button type="submit" class="modal__btn contact-form__button">Отправить</button>
         </form>
     </div>
-</div> -->
+</div>
 <script src="./js/menu.js"></script>
 <script src="./js/modal.js"></script>
 </body>

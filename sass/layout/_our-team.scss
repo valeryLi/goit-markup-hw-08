@@ -3,46 +3,46 @@
     flex-wrap: wrap;
 }
 
-.employees__card {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+// .employees__card {
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+//     border-radius: 0px 0px 4px 4px;
 
-    background-color: var(--auxiliary-light-color);
+//     background-color: var(--auxiliary-light-color);
 
-    flex-basis: calc((100% - 90px) / 4);
+//     flex-basis: calc((100% - 90px) / 4);
 
 
-    &:not(:last-child) {
-        margin-right: 30px;
-}
-}
+//     &:not(:last-child) {
+//         margin-right: 30px;
+// }
+// }
 
-/* ЕСЛИ ДОБАВЯТСЯ ЕЩЕ РАБОТНИКИ
-.employees-card:not(:nth-child(4n)){
-    margin-right: 30px;}
+// /* ЕСЛИ ДОБАВЯТСЯ ЕЩЕ РАБОТНИКИ
+// .employees-card:not(:nth-child(4n)){
+//     margin-right: 30px;}
  
-.employees-card:not(:nth-last-child(- n + 4)){
-    margin-bottom: 30px ;
- } */
+// .employees-card:not(:nth-last-child(- n + 4)){
+//     margin-bottom: 30px ;
+//  } */
 
-.employees__title {
-    @include font(500, 16px, 19px);
-    letter-spacing: 0.03em;
-    margin-bottom: 10px;
-}
+// .employees__title {
+//     @include font(500, 16px, 19px);
+//     letter-spacing: 0.03em;
+//     margin-bottom: 10px;
+// }
 
-.employees__text {
-    margin-bottom: 16px;
+// .employees__text {
+//     margin-bottom: 16px;
 
-    @include font(400, 16px, 19px);
-    letter-spacing: 0.03em;
+//     @include font(400, 16px, 19px);
+//     letter-spacing: 0.03em;
     
-    color: var(--secondary-text-color);
-}
+//     color: var(--secondary-text-color);
+// }
 
-.employees__wrapper {
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
+// .employees__wrapper {
+//     text-align: center;
+//     padding-top: 30px;
+//     padding-bottom: 30px;
+// }
 
