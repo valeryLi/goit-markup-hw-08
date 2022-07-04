@@ -34,6 +34,11 @@
             </li> 
         </ul>
     </nav>
+    <button type="button" class="mobile-menu__open-btn" data-menu-open>
+        <svg class="mobile-menu__open-icon" width="40px" height="40px">
+            <use href="./images/sprite.svg#burger-icon"></use>
+        </svg>
+    </button>
     <ul class="contacts">
             <li class="contacts__item">
                 <a class="contacts__link" href="mailto:info@devstudio.com">
@@ -53,6 +58,52 @@
             </li>
     </ul>
         </div>
+    <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+            <div class="wrapper-up">
+        <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40px" height="40px">
+                <use href="./images/sprite.svg#icon-close-btn"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link mobile-menu__link_current">Студия</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link">Контакты</a>
+            </li>
+        </ul>
+        </div>
+        <div class="wrapper-down">
+        <ul class="mobile-menu__contacts">
+            <li class="mobile-menu__contact-item">
+                <a class="mobile-menu__contact-link mobile-menu__phone" href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-menu__contact-item">
+                <a class="mobile-menu__contact-link mobile-menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+        </ul>
+        <ul class="mobile-menu__social-list">
+            <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link" href="" >Instagram</a>
+            </li>
+            <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link" href="">Twitter</a>
+            </li>
+            <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link" href="">Facebook</a>
+            </li>
+            <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link" href="">LinkedIn</a>
+            </li>
+        </ul>
+        </div>
+        </div>
+    </div>
 </header>
 <main>
         <!-- HERO -->
@@ -63,7 +114,7 @@
     </div>
 </section>
         <!-- FEATURES -->
-<section class="section">
+<!-- <section class="section">
     <div class="container">
         <h2 class="section__title section__title_visually-hidden">Особенности</h2>
     <ul class="features">
@@ -106,9 +157,9 @@
         </li>
     </ul>
 </div>
-</section> 
+</section>  -->
        <!-- ABOUT-->
-<section class="section section_no-padding-top">
+<!-- <section class="section section_no-padding-top">
     <div class="container">
     <h2 class="section__title">Чем мы занимаемся</h2>
     <ul class="about">
@@ -132,9 +183,9 @@
             </li>
     </ul>
     </div>
-</section>
+</section> -->
        <!-- OUR TEAM -->
-<section class="section section_other-bg">
+<!-- <section class="section section_other-bg">
     <div class="container">
         <h2 class="section__title">Наша команда</h2>
         <ul class="employees">
@@ -288,9 +339,9 @@
     </li>
     </ul>
     </div>
-</section>
+</section> -->
 <!-- PERMANENT CLIENTS -->
-<section class="section">
+<!-- <section class="section">
         <div class="container">
             <h2 class="section__title">Постоянные клиенты</h2>
         <ul class="client">
@@ -339,16 +390,16 @@
         </ul>
 
     </div>
-</section>
+</section> -->
 
 </main>
     <!-- FOOTER -->
-<footer class="footer">
+<!-- <footer class="footer">
 <div class="container footer__container">
         <div class="footer__left-side">
-        <a class="logo footer__logo" href="/" lang="en">Web<span class="logo__light">Studio</span></a>
-        <!-- CONTACT INFORMATION -->
-<address class="contact__info">
+        <a class="logo footer__logo" href="/" lang="en">Web<span class="logo__light">Studio</span></a> -->
+         <!-- CONTACT INFORMATION -->
+<!-- <address class="contact__info">
         <ul class="footer__contacts">
             <li class="footer__item">
                 <a class="footer__link  footer__link__map" href="https://goo.gl/maps/mqFkWckFCeggj8cy6" 
@@ -412,8 +463,8 @@
         </form>
         </div>
 </div>
-</footer>
-<div class="backdrop is-hidden" data-modal>
+</footer> -->
+<!-- <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
             <svg class="modal-close-btn__icon" width="18px" height="18px">
@@ -479,7 +530,8 @@
             <button type="submit" class="modal-btn contact-form__button">Отправить</button>
         </form>
     </div>
-</div>
+</div> -->
+<script src="./js/menu.js"></script>
 <script src="./js/modal.js"></script>
 </body>
 </html>
