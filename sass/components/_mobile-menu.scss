@@ -10,7 +10,7 @@
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
-        transition: opacity 250ms var(--cubic-bezier), visibility 250ms va(--cubic-bezier);
+        transition: opacity 250ms var(--cubic-bezier), visibility 250ms var(--cubic-bezier);
     }
 
     .mobile-menu.is-open {
