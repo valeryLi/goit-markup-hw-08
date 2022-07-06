@@ -25,9 +25,14 @@
         display: block;
         padding: 10px 0;
         line-height: 0;
+
         background-color: transparent;
         border: none;
-        
+    }
+
+    .mobile-menu-open-btn__icon :hover,
+    .mobile-menu-open-btn__icon:focus{
+        fill: var(--accent-color);
     }
 }
 

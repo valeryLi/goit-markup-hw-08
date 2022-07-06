@@ -58,10 +58,15 @@
     margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px){
+    .footer__left-side{
+        display: flex;
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px){
    .footer__left-side{
-    display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
    }
     
 }
@@ -83,13 +88,13 @@
         align-items: baseline;
     }
 
-     .footer__left-side {
+     .footer__contacts-wrapper {
         justify-content: space-between;
         flex-grow: 1;
         margin-right: 70px;
     }
     
-    .footer__right-side {
+    .footer__social-list-wrapper {
     margin-right: 93px;
     }
 

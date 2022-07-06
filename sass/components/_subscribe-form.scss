@@ -32,6 +32,7 @@
     }
 
     @media screen and (max-width: 1199px){
+        display: block;
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 20px;
@@ -39,13 +40,15 @@
     }
 
     @media screen and (min-width: 1200px){
+        display: block;
+        width: 358px;
+
         &:focus {
             outline: none;
             border-color: var(--accent-color);
         }
     }
     }
-
 
 .subscribe-form__btn {
     display: inline-flex;
@@ -55,4 +58,10 @@
 .subscribe-form__icon {
     margin-left: 10px;
     fill: var(--auxiliary-light-color);
+}
+
+@media screen and (min-width: 1200px){
+    .subscribe-form{
+        display: flex;
+    }
 }

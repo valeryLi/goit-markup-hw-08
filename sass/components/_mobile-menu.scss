@@ -25,6 +25,7 @@
         flex-direction: column;
         justify-content: space-between;
 
+        padding-left: 40px;
         padding-top: 48px;
         padding-bottom: 48px;
         height: 100%;
@@ -71,9 +72,9 @@
 
     }
 
-    .mobile-menu__social-item {
+    .mobile-menu__social-item{
         position: relative;
-        margin-right: 20px;
+        margin-right: 10px;
 
         &::after {
             position: absolute;
