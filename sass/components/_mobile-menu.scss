@@ -41,7 +41,7 @@
     }
 
     .mobile-menu__link_current {
-        color: var(--accent-color)
+        color: var(--accent-color);
     }
 
     .mobile-menu__item:not(:last-child) {
@@ -57,10 +57,9 @@
         margin-bottom: 32px;
 
         color: var(--accent-color);
-
     }
 
-    .mobile-menu__mail {
+    .mobile-menu__mail{
         @include font(500, 24px, 28px);
 
         color: var(--secondary-text-color);
@@ -76,7 +75,7 @@
         position: relative;
         margin-right: 10px;
 
-        &::after {
+        &:not(:last-child)::after {
             position: absolute;
             content: " ";
             margin-left: 10px;
@@ -87,6 +86,7 @@
     }
 
     .mobile-menu__social-link {
+        margin-left: 10px;
         @include font(500, 18px, 22px);
         letter-spacing: 0.02em;
 
