@@ -20,14 +20,14 @@
 }
 
 @media screen and (max-width: 767px){
-    .logo__header{
+    .header__logo{
         padding-top: 16px;
         padding-bottom: 16px;
     }
 }
 
 @media screen and (min-width: 768px){
-    .logo__header{
+    .header__logo{
         padding-top: 26px;
         padding-bottom: 26px;
         margin-right: 88px;
@@ -39,7 +39,7 @@
         @include font($fs: 26px, $lh: 31px);
     }
 
-    .logo__header {
+    .header__logo{
         padding-top: 24px;
         padding-bottom: 25px;
         margin-right: 93px;

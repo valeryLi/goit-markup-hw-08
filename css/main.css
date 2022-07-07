@@ -154,13 +154,13 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  .logo {
+  .header__logo {
     padding-top: 16px;
     padding-bottom: 16px;
   }
 }
 @media screen and (min-width: 768px) {
-  .logo {
+  .header__logo {
     padding-top: 26px;
     padding-bottom: 26px;
     margin-right: 88px;
@@ -173,7 +173,7 @@ a {
     line-height: 1.1923076923;
   }
 
-  .logo__header {
+  .header__logo {
     padding-top: 24px;
     padding-bottom: 25px;
     margin-right: 93px;
@@ -399,20 +399,27 @@ a {
   height: 44px;
   border-radius: 50%;
   background-color: var(--auxiliary-light-color);
-  transition: background-color 250ms var(--cubic-bezier);
-}
-.social-list__link:hover, .social-list__link:focus {
-  background-color: var(--accent-color);
 }
 
 .social-list__icon {
   fill: var(--social-icon-color);
-  transition: fill 250ms var(--cubic-bezier);
-}
-.social-list__link:hover .social-list__icon, .social-list__link:focus .social-list__icon {
-  fill: var(--auxiliary-light-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .social-list__link {
+    transition: background-color 250ms var(--cubic-bezier);
+  }
+  .social-list__link:hover, .social-list__link:focus {
+    background-color: var(--accent-color);
+  }
+
+  .social-list__icon {
+    transition: fill 250ms var(--cubic-bezier);
+  }
+  .social-list__link:hover .social-list__icon, .social-list__link:focus .social-list__icon {
+    fill: var(--auxiliary-light-color);
+  }
+}
 .subscribe-form {
   width: 100%;
 }
@@ -480,6 +487,19 @@ a {
     display: flex;
   }
 }
+@media screen and (max-width: 479px) {
+  .mobile-menu__phone {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .mobile-menu__social-list {
+    flex-wrap: wrap;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
 @media screen and (max-width: 767px) {
   .mobile-menu {
     position: fixed;
@@ -487,6 +507,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 1;
     background-color: var(--auxiliary-light-color);
     opacity: 0;
     visibility: hidden;
@@ -1202,8 +1223,6 @@ a {
 
 .project__cards__wrapper {
   padding: 20px 24px;
-  border: 1px solid #EEEEEE;
-  border-top: none;
   background-color: var(--auxiliary-light-color);
 }
 
@@ -1235,7 +1254,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
+  padding: 77px 24px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5555555556;
@@ -1243,7 +1262,7 @@ a {
   color: var(--auxiliary-light-color);
   background-color: rgba(33, 150, 243, 0.9);
   transition: transform 250ms var(--cubic-bezier);
-  transform: translateY(100%);
+  transform: translateY(101%);
 }
 .project__cards__link:hover .project__cards__overlay, .project__cards__link:focus .project__cards__overlay {
   transform: translateY(0%);
@@ -1258,6 +1277,12 @@ a {
     margin-right: 8px;
   }
 }
+@media screen and (max-width: 479px) {
+  .project__cards__overlay {
+    padding-top: 25px;
+    overflow: auto;
+  }
+}
 @media screen and (min-width: 398px) and (max-width: 767px) {
   .project__btn {
     row-gap: 15px;
@@ -1266,6 +1291,11 @@ a {
 
   .project__item:not(:nth-child(3n)) {
     margin-right: 8px;
+  }
+
+  .project__cards__wrapper {
+    border: 1px solid #EEEEEE;
+    border-top: none;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1283,14 +1313,43 @@ a {
     display: flex;
     flex-wrap: wrap;
   }
+
+  .project__cards__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project__cards__link {
+    flex-grow: 1;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project__cards__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .project__cards__item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
 }
 @media screen and (max-width: 1199px) {
-  .project__cards__item {
+  .project__cards__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .project__btn {
     margin-bottom: 50px;
+  }
+
+  .project__cards__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  .project__cards__item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  .project__cards__item:not(:nth-last-child(-n+3)) {
+    margin-bottom: 30px;
   }
 }/*# sourceMappingURL=main.css.map */
