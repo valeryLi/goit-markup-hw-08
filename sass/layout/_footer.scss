@@ -55,12 +55,12 @@
 .footer__social-list{
     display: flex;
     justify-content: center;
-    margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px){
     .footer__left-side{
         display: flex;
+        align-items: baseline;
     }
 }
 
@@ -76,7 +76,7 @@
         text-align: center;
     }
 
-    .footer__contacts {
+    .footer__left-side {
         margin-bottom: 60px;
     }
 }
@@ -94,7 +94,7 @@
         margin-right: 70px;
     }
     
-    .footer__social-list-wrapper {
+    .footer__left-side {
     margin-right: 93px;
     }
 

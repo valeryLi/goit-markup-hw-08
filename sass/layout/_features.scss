@@ -63,7 +63,7 @@
 
 @media screen and (min-width: 1200px){
     .features__item {
-        flex-basis: calc((100% - 120px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
 
         &:not(:last-child){
             margin-right: 30px;

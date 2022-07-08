@@ -124,8 +124,8 @@
         fill: var(--secondary-text-color);
     }
 
-    .header__tel {
-        margin-top: 10px;
+    .contacts__item:not(:last-child) {
+        margin-bottom: 10px;
     }
 }
 
